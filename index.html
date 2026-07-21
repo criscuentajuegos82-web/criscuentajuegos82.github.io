@@ -3,10 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Página Web</title>
+<title>SHALOM SPA</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f4fbff;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#1aa7ec,#1ec773);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:45px;
+}
+
+header p{
+margin-top:15px;
+font-size:20px;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+.tarjetas{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+width:280px;
+text-align:center;
+}
+
+.card h3{
+color:#169ad6;
+margin-bottom:15px;
+}
+
+.boton{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#1ec773;
+color:white;
+text-decoration:none;
+font-size:18px;
+border-radius:40px;
+}
+
+footer{
+background:#169ad6;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+
 </head>
-<body style="font-family: Arial; text-align:center; margin-top:50px;">
-<h1>¡Bienvenido!</h1>
-<p>Mi primera página web creada con GitHub Pages.</p>
+
+<body>
+
+<header>
+
+<h1>SHALOM SPA</h1>
+
+<p>Especialistas en Gasfitería y Reparación de Calefones</p>
+
+<a class="boton" href="#">Solicita tu servicio</a>
+
+</header>
+
+<section>
+
+<h2 style="text-align:center;color:#169ad6;margin-bottom:35px;">Nuestros Servicios</h2>
+
+<div class="tarjetas">
+
+<div class="card">
+<h3>🔧 Gasfitería</h3>
+<p>Instalaciones, reparaciones y mantenciones para hogares.</p>
+</div>
+
+<div class="card">
+<h3>🔥 Calefones</h3>
+<p>Diagnóstico, reparación y mantenimiento de calefones.</p>
+</div>
+
+<div class="card">
+<h3>🚿 Emergencias</h3>
+<p>Soluciones rápidas para filtraciones y problemas de agua.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 style="text-align:center;color:#169ad6;">¿Quiénes Somos?</h2>
+
+<p style="text-align:center;font-size:18px;margin-top:20px;line-height:1.8;">
+En <strong>SHALOM SPA</strong> entregamos soluciones confiables en gasfitería y reparación de calefones.
+Trabajamos con responsabilidad, rapidez y compromiso para brindar un servicio de calidad a cada cliente.
+</p>
+
+</section>
+
+<section style="text-align:center;">
+
+<h2 style="color:#169ad6;">Cobertura</h2>
+
+<p style="font-size:20px;margin-top:20px;">
+📍 Atendemos en <strong>Chonchi, Chiloé</strong> y sus alrededores.
+</p>
+
+</section>
+
+<footer>
+
+<p><strong>SHALOM SPA</strong></p>
+
+<p>Gasfitería • Reparación de Calefones • Chonchi, Chiloé</p>
+
+<p>© 2026 Todos los derechos reservados.</p>
+
+</footer>
+
 </body>
 </html>
