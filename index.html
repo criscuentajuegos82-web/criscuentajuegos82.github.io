@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHALOM SPA</title>
+
+<title>SHALOM SPA | Gasfitería y Calefones</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -19,145 +21,319 @@ color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#1aa7ec,#1ec773);
-color:white;
-padding:60px 20px;
+
+background:
+linear-gradient(rgba(0,100,150,.75),rgba(0,180,120,.75)),
+url("https://images.unsplash.com/photo-1581094794329-c8112a89af12")
+center/cover;
+
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
+color:white;
+padding:20px;
+
 }
 
 header h1{
-font-size:45px;
+font-size:55px;
+letter-spacing:2px;
 }
 
 header p{
-margin-top:15px;
-font-size:20px;
+font-size:22px;
+margin:20px 0;
 }
+
+
+.boton{
+
+background:#20c878;
+color:white;
+padding:16px 40px;
+border-radius:50px;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+
+}
+
 
 section{
-max-width:1000px;
+
+max-width:1100px;
 margin:auto;
-padding:40px 20px;
+padding:60px 20px;
+
 }
 
-.tarjetas{
+
+.titulo{
+
+text-align:center;
+color:#149bd7;
+font-size:35px;
+margin-bottom:40px;
+
+}
+
+
+.servicios{
+
 display:flex;
 flex-wrap:wrap;
-gap:20px;
 justify-content:center;
+gap:25px;
+
 }
 
+
 .card{
+
+background:white;
+width:320px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+
+.card img{
+
+width:100%;
+height:200px;
+object-fit:cover;
+
+}
+
+
+.card div{
+
+padding:25px;
+text-align:center;
+
+}
+
+
+.card h3{
+
+color:#149bd7;
+margin-bottom:15px;
+
+}
+
+
+
+.beneficios{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+
+}
+
+
+.beneficio{
+
 background:white;
 padding:25px;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-width:280px;
+width:250px;
 text-align:center;
+box-shadow:0 5px 15px #ddd;
+
 }
 
-.card h3{
-color:#169ad6;
-margin-bottom:15px;
-}
 
-.boton{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#1ec773;
+
+.contacto{
+
+background:#149bd7;
 color:white;
-text-decoration:none;
-font-size:18px;
-border-radius:40px;
+text-align:center;
+padding:50px 20px;
+
 }
+
 
 footer{
-background:#169ad6;
+
+background:#0877a8;
 color:white;
+padding:25px;
 text-align:center;
-padding:20px;
-margin-top:40px;
+
 }
+
+
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <h1>SHALOM SPA</h1>
 
-<p>Especialistas en Gasfitería y Reparación de Calefones</p>
+<p>
+Gasfitería profesional y reparación de calefones
+</p>
 
 <a class="boton" href="https://wa.me/56961743729" target="_blank">
-Solicita tu servicio
+Reserva tu servicio
 </a>
 
 </header>
 
+
+
 <section>
 
-<h2 style="text-align:center;color:#169ad6;margin-bottom:35px;">
+<h2 class="titulo">
 Nuestros Servicios
 </h2>
 
-<div class="tarjetas">
+
+<div class="servicios">
+
 
 <div class="card">
+
+<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4">
+
+<div>
+
 <h3>🔧 Gasfitería</h3>
-<p>Instalaciones, reparaciones y mantenciones para hogares.</p>
+
+<p>
+Instalaciones, reparaciones y soluciones para hogares y empresas.
+</p>
+
 </div>
 
-<div class="card">
-<h3>🔥 Calefones</h3>
-<p>Diagnóstico, reparación y mantenimiento de calefones.</p>
 </div>
 
+
+
 <div class="card">
+
+<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a">
+
+<div>
+
+<h3>🔥 Reparación de Calefones</h3>
+
+<p>
+Mantención, diagnóstico y reparación de calefones.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1">
+
+<div>
+
 <h3>🚿 Emergencias</h3>
-<p>Soluciones rápidas para filtraciones y problemas de agua.</p>
+
+<p>
+Atención rápida para filtraciones y problemas de agua.
+</p>
+
 </div>
+
+</div>
+
 
 </div>
 
 </section>
+
+
 
 <section>
 
-<h2 style="text-align:center;color:#169ad6;">
-¿Quiénes Somos?
+<h2 class="titulo">
+¿Por qué elegir SHALOM SPA?
 </h2>
 
-<p style="text-align:center;font-size:18px;margin-top:20px;line-height:1.8;">
-En <strong>SHALOM SPA</strong> entregamos soluciones confiables en gasfitería y reparación de calefones.
-Trabajamos con responsabilidad, rapidez y compromiso para brindar un servicio de calidad a cada cliente.
-</p>
+
+<div class="beneficios">
+
+
+<div class="beneficio">
+<h3>✔ Experiencia</h3>
+<p>Trabajo responsable y dedicado.</p>
+</div>
+
+
+<div class="beneficio">
+<h3>✔ Rapidez</h3>
+<p>Soluciones eficientes para tu hogar.</p>
+</div>
+
+
+<div class="beneficio">
+<h3>✔ Confianza</h3>
+<p>Atención cercana y profesional.</p>
+</div>
+
+
+</div>
 
 </section>
 
-<section style="text-align:center;">
 
-<h2 style="color:#169ad6;">
-Cobertura
+
+
+<section class="contacto">
+
+<h2>
+Solicita tu visita
 </h2>
 
-<p style="font-size:20px;margin-top:20px;">
-📍 Atendemos en <strong>Chonchi, Chiloé</strong> y sus alrededores.
+<p>
+📍 Chonchi, Chiloé y alrededores
 </p>
 
+<br>
+
+<a class="boton" href="https://wa.me/56961743729" target="_blank">
+Hablar por WhatsApp
+</a>
+
 </section>
+
+
 
 <footer>
 
-<p><strong>SHALOM SPA</strong></p>
+<h3>SHALOM SPA</h3>
 
-<p>Gasfitería • Reparación de Calefones • Chonchi, Chiloé</p>
+<p>
+Gasfitería • Calefones • Soluciones para el hogar
+</p>
 
-<p>© 2026 Todos los derechos reservados.</p>
+<p>
+© 2026 Todos los derechos reservados
+</p>
 
 </footer>
+
 
 </body>
 </html>
