@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SHALOM SPA | Gasfitería y Calefones</title>
+<title>SHALOM SPA | Servicios Profesionales</title>
+
 
 <style>
 
@@ -12,166 +15,242 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:'Segoe UI',Arial,sans-serif;
 }
 
 body{
-background:#f4fbff;
+background:#f7f9fb;
 color:#333;
 }
 
+
 header{
 
+min-height:100vh;
+
 background:
-linear-gradient(rgba(0,100,150,.75),rgba(0,180,120,.75)),
-url("https://images.unsplash.com/photo-1581094794329-c8112a89af12")
+linear-gradient(
+rgba(0,25,45,.85),
+rgba(0,130,100,.75)
+),
+url("https://images.unsplash.com/photo-1581092160607-ee22621dd758")
 center/cover;
 
-height:90vh;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
+justify-content:center;
+
 text-align:center;
 color:white;
-padding:20px;
+
+padding:30px;
 
 }
 
-header h1{
+
+
+.logo{
+
 font-size:55px;
-letter-spacing:2px;
+font-weight:900;
+letter-spacing:4px;
+
+color:#d4af37;
+
 }
+
+
+
+header h2{
+
+font-size:40px;
+margin:20px 0;
+
+}
+
 
 header p{
+
 font-size:22px;
-margin:20px 0;
+max-width:700px;
+
 }
 
 
-.boton{
 
-background:#20c878;
-color:white;
-padding:16px 40px;
-border-radius:50px;
+.btn{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:18px 45px;
+
+background:#d4af37;
+
+color:#111;
+
+font-weight:bold;
+
 text-decoration:none;
+
+border-radius:50px;
+
 font-size:20px;
+
+transition:.3s;
+
+}
+
+
+.btn:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+nav{
+
+position:absolute;
+
+top:0;
+
+width:100%;
+
+padding:25px;
+
+display:flex;
+
+justify-content:space-around;
+
+color:white;
+
+}
+
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
 font-weight:bold;
 
 }
 
 
+
 section{
 
-max-width:1100px;
+padding:80px 20px;
+
+max-width:1200px;
+
 margin:auto;
-padding:60px 20px;
 
 }
+
 
 
 .titulo{
 
 text-align:center;
-color:#149bd7;
-font-size:35px;
-margin-bottom:40px;
+
+font-size:38px;
+
+color:#003b5c;
+
+margin-bottom:50px;
 
 }
+
 
 
 .servicios{
 
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:25px;
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
 
 }
+
 
 
 .card{
 
 background:white;
-width:320px;
+
 border-radius:20px;
+
 overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+transition:.3s;
 
 }
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
 
 
 .card img{
 
 width:100%;
-height:200px;
+
+height:220px;
+
 object-fit:cover;
 
 }
 
 
+
 .card div{
 
-padding:25px;
-text-align:center;
+padding:30px;
 
 }
 
 
+
 .card h3{
 
-color:#149bd7;
+color:#008060;
+
+font-size:25px;
+
 margin-bottom:15px;
 
 }
 
 
 
-.beneficios{
+.precio{
 
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
+color:#d4af37;
 
-}
+font-size:25px;
 
-
-.beneficio{
-
-background:white;
-padding:25px;
-border-radius:15px;
-width:250px;
-text-align:center;
-box-shadow:0 5px 15px #ddd;
+font-weight:bold;
 
 }
 
-
-
-.contacto{
-
-background:#149bd7;
-color:white;
-text-align:center;
-padding:50px 20px;
-
-}
-
-
-footer{
-
-background:#0877a8;
-color:white;
-padding:25px;
-text-align:center;
-
-}
 
 
 </style>
+
 
 </head>
 
@@ -179,27 +258,64 @@ text-align:center;
 <body>
 
 
+
 <header>
 
-<h1>SHALOM SPA</h1>
+
+<nav>
+
+<a href="#servicios">Servicios</a>
+
+<a href="#precios">Precios</a>
+
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+
+<div>
+
+
+<div class="logo">
+SHALOM SPA
+</div>
+
+
+<h2>
+Gasfitería Premium y Soluciones para tu Hogar
+</h2>
+
 
 <p>
-Gasfitería profesional y reparación de calefones
+Especialistas en reparación de calefones,
+instalaciones sanitarias y emergencias del hogar.
+Servicio profesional en Chiloé.
 </p>
 
-<a class="boton" href="https://wa.me/56961743729" target="_blank">
-Reserva tu servicio
+
+
+<a class="btn" href="https://wa.me/56961743729">
+
+Solicitar visita
+
 </a>
+
+
+
+</div>
+
 
 </header>
 
 
 
-<section>
+<section id="servicios">
+
 
 <h2 class="titulo">
 Nuestros Servicios
 </h2>
+
 
 
 <div class="servicios">
@@ -209,35 +325,62 @@ Nuestros Servicios
 
 <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4">
 
+
 <div>
 
-<h3>🔧 Gasfitería</h3>
+<h3>
+🔥 Mantención de Calefones
+</h3>
+
 
 <p>
-Instalaciones, reparaciones y soluciones para hogares y empresas.
+Limpieza, revisión completa y optimización del funcionamiento.
 </p>
 
+
+<br>
+
+<span class="precio">
+Desde $45.000
+</span>
+
+
 </div>
 
 </div>
+
 
 
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a">
+<img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7">
+
 
 <div>
 
-<h3>🔥 Reparación de Calefones</h3>
+<h3>
+🔧 Gasfitería Hogar
+</h3>
+
 
 <p>
-Mantención, diagnóstico y reparación de calefones.
+Reparaciones, instalaciones y mejoras sanitarias.
 </p>
 
+
+<br>
+
+
+<span class="precio">
+Desde $35.000
+</span>
+
+
 </div>
 
 </div>
+
 
 
 
@@ -246,94 +389,34 @@ Mantención, diagnóstico y reparación de calefones.
 
 <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1">
 
+
 <div>
 
-<h3>🚿 Emergencias</h3>
+<h3>
+🚨 Emergencias
+</h3>
+
 
 <p>
-Atención rápida para filtraciones y problemas de agua.
+Atención rápida para filtraciones y problemas urgentes.
 </p>
 
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<h2 class="titulo">
-¿Por qué elegir SHALOM SPA?
-</h2>
-
-
-<div class="beneficios">
-
-
-<div class="beneficio">
-<h3>✔ Experiencia</h3>
-<p>Trabajo responsable y dedicado.</p>
-</div>
-
-
-<div class="beneficio">
-<h3>✔ Rapidez</h3>
-<p>Soluciones eficientes para tu hogar.</p>
-</div>
-
-
-<div class="beneficio">
-<h3>✔ Confianza</h3>
-<p>Atención cercana y profesional.</p>
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-<section class="contacto">
-
-<h2>
-Solicita tu visita
-</h2>
-
-<p>
-📍 Chonchi, Chiloé y alrededores
-</p>
 
 <br>
 
-<a class="boton" href="https://wa.me/56961743729" target="_blank">
-Hablar por WhatsApp
-</a>
+
+<span class="precio">
+Desde $60.000
+</span>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
 
 </section>
-
-
-
-<footer>
-
-<h3>SHALOM SPA</h3>
-
-<p>
-Gasfitería • Calefones • Soluciones para el hogar
-</p>
-
-<p>
-© 2026 Todos los derechos reservados
-</p>
-
-</footer>
-
-
-</body>
-</html>
